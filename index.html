@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cadastro</title>
-    <style>
-         body{
-            background-color: darkgray;
-        }
-        footer{
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <style>
+     footer{
         position:absolute;
         bottom: 0;
         background-color: blue;
@@ -18,46 +15,89 @@
         text-align: center;
         line-height: 100px;
         } 
-        body{
-            text-align:center;
-        }
-        .img28{
-            width: 10;
-            height: 10;
-        }
-    </style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0092d1;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .login-header {
+      background-color: #3498db;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .login-form {
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .form-group button:hover {
+      background-color: #2980b9;
+    }
+  </style>
 </head>
 <body>
-    <h1>bem vindo</h1>
-    <div class="box-parent-login">
-        <div class="well bg-white box-login">
-            <h1 class="ls-login-logo"></h1>
-            <form role="form">
-                <fieldset>
-     
-                    <div class="form-group ls-login-user">
-                        <label for="userLogin"><img class="img28" src="https://cdn-icons-png.flaticon.com/512/3106/3106921.png" alt=""></label>
-                        <input class="form-control ls-login-bg-user input-lg" id="userLogin" type="text" aria-label="Usuário" placeholder="Usuário">
-                    </div>
-     
-                    <div class="form-group ls-login-password">
-                        <label for="userPassword"><img class="img28" src="https://cdn-icons-png.flaticon.com/512/696/696975.png" alt=""></label>
-                        <input class="form-control ls-login-bg-password input-lg" id="userPassword" type="password" aria-label="Senha" placeholder="Senha">
-                    </div>
-     
-                    <a href="contato.html">esqueci minha Senha</a>
-     
-                    <button><a href="loby.html">entrar</a></button>
-                    </p>
-                   
-                </fieldset>
-            </form>
-        </div>
+
+  <div class="login-container">
+    <div class="login-header">
+      <h2>Tela de Login</h2>
     </div>
-    <footer>
-        <p>
-           <a href="index.html"><img src="img/ilipisis.png" alt=""></a> 
-        </p>
-    </footer>
+    <div class="login-form">
+      <div class="form-group">
+        <label for="username">Usuário:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <button type="submit"><a href="loby.html">Entrar</a></button>
+        <a href="contato.html">Esqueceu sua senha?</a> <p></p>
+    </div>
+    </div>
+  </div>
+
 </body>
 </html>
