@@ -8,7 +8,7 @@
     <title>Caça fantasmas</title>
     <style>
           body{
-            background-color: darkgray;
+            background-color: rgb(136, 98, 8);
         }
             footer{
         position:absolute;
@@ -41,7 +41,7 @@
             display: flex;
             justify-content: space-between;
             /* Para que com margin left/right auto fique alinhado a esquerda com o palco */
-            width: 80%;
+            width: 90%;
             /* Para "centralizar" horizontalmente */
             margin: 0 auto;
             font-size: 1.5em;
@@ -56,8 +56,33 @@
             text-align: center;
             color: white;
             background-color: orange;
-            border: 1px solid black;
-        }
+            border: 5px solid black;
+            body {
+    background-color: darkgray;
+}
+
+#palco {
+    width: 95%;
+    height: 95vh;
+    background-image: url('https://img.freepik.com/vetores-premium/ilustracao-dos-desenhos-animados-de-uma-floresta-escura-com-uma-lua-ao-fundo_898634-17.jpg?w=2000');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px auto; /* Adiciona uma margem ao redor do palco */
+}
+
+/* Outras regras de estilo ... */
+
+.center-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.center-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+}
     </style>
 </head>
 
@@ -140,13 +165,13 @@
             $cronometro.innerHTML = `Tempo: <span>${tempoSegundos}</span>`;
         }
     </script>
-    <center><a href="loby.html">voltar ao menu</a></center>
-    <center><a href="jogo3.html">reiniciar</a></center>
-    <footer>
-        <p>
-           <a href="loby.html"><img src="img/ilipisis.png" alt=""></a> 
-        </p>
-    </footer>
+    <center><a href="loby.html">Retornar ao Loby</a></center>
+
+  <center>
+    <button>
+        <a href="jogo3.html">Reiniciar</a>
+    </button>
+  </center>
 </body>
 
 </html>
